@@ -1,0 +1,43 @@
+.header {
+	background-image: url('../../assets/images/desktop/image-hero.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 600px;
+	width: 100%;
+	padding: 0px 160px;
+	&-title {
+		border: 2px solid #fff;
+		height: 275px;
+		width: 650px;
+		color: #fff;
+		font-size: 60px;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 400;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 40px;
+	}
+}
+
+@media (max-width: 375px) {
+	.header {
+		background-image: url('../../assets/images/mobile/image-hero.jpg');
+		padding: 0;
+		width: 100vw;
+		height: 750px;
+		padding: 30px 30px;
+
+		&-title {
+			height: 250px;
+			width: 100%;
+			font-size: 40px;
+			font-family: 'Josefin Sans', sans-serif;
+			font-weight: 400;
+		}
+	}
+}
